@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQ</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM4LK5K0LJ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" style="color:red;">
+        <h1 style="font-size:40px;">SWDT</h1>
+          <a href="indes.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="discussion.html">Discussion</a>
+          <br>
+        <hr style="width:40%;">
+        <h2 style="font-size:40px;">Request</h2>
+        <a href="request-a-wiki.html">Request a Wiki</a>
+        <a href="request-a-features.html">Request a Features</a>
+        </div>
+      </div>
+<div class="content" style="padding:20px;">
+    <div class="topnav" id="myTopnav">
+        <a><span style="cursor:pointer;" onclick="openNav()">&#9776; Menu</span></a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/edit/main/faq.html"><i class='bx bx-edit-alt'></i> Edit</a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/blob/main/faq.html"><i class='bx bx-code-alt' ></i> View Source Code</a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/commits/main/faq.html"><i class='bx bx-history' ></i> View History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="content">     
+   <h1>FAQ</h1>
+   <p>Welcome to a collection of FAQ provided by One Future Unified Team. A collection of frequently asked question with answers provided by the team. </p>
+   <br>
+   <button type="button" class="collapsible">What are InfoHQ? <i class='bx bxs-caret-down-circle'></i></button>
+<div class="content1">
+  <p>InfoHQ is an open source software, based on HTML, CSS and JavaScript. Users could edit InfoHQ pages and view InfoHQ pages history and source codes.<br><br>InfoHQ got some inspiration from "wiki" by MediaWiki. InfoHQ is currently available to be hosted in most (if not all) free and paid web hosting companies. </p>
+</div>
+	   <button type="button" class="collapsible">Who are Software and Website Developer Team? <i class='bx bxs-caret-down-circle'></i></button>
+<div class="content1">
+  <p>One Future Unified Team is a small team based in Malaysia. One Future Unified Team is focused in many things, from web development to story writing. One Future Unified Team is founded from a group of young friends with an interest in technology.</p>
+</div>
+   <button type="button" class="collapsible">Is InfoHQ open source? <i class='bx bxs-caret-down-circle'></i></button>
+<div class="content1">
+  <p>InfoHQ is an open source software. All users could view and edit all of our source code. InfoHQ is licensed under MIT open source licenses. </p>
+</div>
+   <button type="button" class="collapsible">Is InfoHQ free? <i class='bx bxs-caret-down-circle'></i></button>
+<div class="content1">
+  <p>InfoHQ is a free open source software for everyone! Everyone could use and edit InfoHQ for free. All features provided in InfoHQ is totally free for everyone to use and enjoy.</p>
+</div>
+   <button type="button" class="collapsible">How to Create A Wiki? <i class='bx bxs-caret-down-circle'></i></button>
+<div class="content1">
+  <p>Everyone could create and request a InfoHQ in One Future Unified Team. Creating a InfoHQ is totally free in One Future Unified Team. Please fill up the Google Form linked and provided <a href="https://forms.gle/jA19y1JtQhAZdTWG9">here</a> to request an InfoHQ. </p>
+</div>
+   <br>
+   <br>
+   <hr>
+   <h4 style="text-align:center;color:blue;">Hosted by One Future Unified Team powered by Info HQ.</h4>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+     
+</body>
+</html>
