@@ -1,0 +1,46 @@
+<form class="searchForm">
+        <input type="search" class="txtBox">
+        <input type="submit" class="submit-btn"value="submit">
+        </form>
+         <div class="search-result" style="text-align:center;color:blue;text-decoration: none;">
+        <h1 class="search-word"></h1>
+        <p class="description"></p>
+          </div>
+     <script>
+    const txtBox = document.querySelector(".txtBox");
+const form = document.querySelector(".searchForm");
+const searchWord = document.querySelector(".search-word");
+const description = document.querySelector(".description");
+const dictionaryJson =
+  "https://software-and-website-developer-team.github.io/API/Reviews/reviews.json";
+function searchDict(e) {
+  e.preventDefault();
+  fetch(dictionaryJson)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      e.preventDefault;
+      let word = txtBox.value;
+      console.log(txtBox.value);
+      let searchKeyword = word.toUpperCase();
+      Object.keys(data).forEach(function(key) {
+        if (key === searchKeyword) {
+          searchWord.innerHTML = searchKeyword;
+          if(searchKeyword === data[key]){
+            description.innerHTML = "Not found";
+          }
+          else{
+             description.innerHTML = data[key];
+          }
+          
+          console.log(data[key]);
+        }
+      });
+    });
+}
+
+form.addEventListener("submit", searchDict);
+
+
+    </script>
