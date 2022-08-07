@@ -1,0 +1,88 @@
+<form
+      name="calculatorOne"
+      id="calculator"
+      onsubmit="event.preventDefault()"
+    >
+      <h6>Calculator</h6>
+      <div class="display">
+        <div class="history">&nbsp;</div>
+        <input
+          type="text"
+          name="display"
+          id="display"
+          placeholder="0"
+          readonly
+        />
+      </div>
+
+      <div class="keys">
+        <input type="button" value="1" name="btn1" onclick="valueGet(1)" />
+        <input type="button" value="2" name="btn2" onclick="valueGet(2)" />
+        <input type="button" value="3" name="btn3" onclick="valueGet(3)" />
+        <input
+          type="button"
+          value="+"
+          name="btnplus"
+          onclick="valueGet('+')"
+          class="highlight"
+        />
+        <input type="button" value="4" name="btn4" onclick="valueGet(4)" />
+        <input type="button" value="5" name="btn5" onclick="valueGet(5)" />
+        <input type="button" value="6" name="btn6" onclick="valueGet(6)" />
+        <input
+          type="button"
+          value="-"
+          name="btnminux"
+          onclick="valueGet('-')"
+          class="highlight"
+        />
+        <input type="button" value="7" name="btn7" onclick="valueGet(7)" />
+        <input type="button" value="8" name="btn8" onclick="valueGet(8)" />
+        <input type="button" value="9" name="btn9" onclick="valueGet(9)" />
+        <input
+          type="button"
+          value="*"
+          name="btnmulti"
+          onclick="valueGet('*')"
+          class="highlight"
+        />
+        <input type="button" value="0" name="btn0" onclick="valueGet(0)" />
+        <input type="button" value="00" name="btn0" onclick="valueGet('00')" />
+        <input type="button" value="." name="btn0" onclick="valueGet('.')" />
+        <input
+          type="button"
+          class="highlight"
+          value="/"
+          name="btndividess"
+          onclick="valueGet('/')"
+        />
+
+        <input
+          type="button"
+          class="highlight"
+          value="Ac"
+          name="val0"
+          onclick="zeroMama(0)"
+        />
+        <input
+          type="button"
+          class="highlight"
+          value="Del"
+          name="btndel"
+          onclick="aakKam()"
+        />
+
+        <input type="button" value="^2" name="squere" onclick="squareGar()" />
+        <input
+          class="highlight"
+          type="button"
+          value="="
+          name="btn0"
+          onclick="hisab('=')"
+        />
+        <input type="button" value="root" name="rootni" onclick="rootnikal()" />
+        <input type="button" value="sin" name="sinkik" onclick="sinnikal()" />
+        <input type="button" value="cos" name="cosnik" onclick="cosnikal()" />
+        <input type="button" value="tan" name="tannik" onclick="tannikal()" />
+      </div>
+    </form>
