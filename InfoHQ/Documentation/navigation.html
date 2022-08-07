@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM4LK5K0LJ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" style="color:red;">
+        <h1 style="font-size:40px;">OFUT</h1>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="discussion.html">Discussion</a>
+          <br>
+        <hr style="width:40%;">
+        <h2 style="font-size:40px;">Request</h2>
+        <a href="request-a-wiki.html">Request a Wiki</a>
+        <a href="request-a-features.html">Request a Features</a>
+        </div>
+      </div>
+<div class="content" style="padding:20px;">
+    <div class="topnav" id="myTopnav">
+        <a><span style="cursor:pointer;" onclick="openNav()">&#9776; Menu</span></a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/edit/main/Documentation/navigation.html"><i class='bx bx-edit-alt'></i> Edit</a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/blob/main/Documentation/navigation.html"><i class='bx bx-code-alt' ></i> View Source Code</a>
+        <a href="https://github.com/One-Future-Unified-Team/InfoHQ/commits/main/Documentation/navigation.html"><i class='bx bx-history' ></i> View History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="content">     
+   <!--- Please insert all pages text and codes here--> 
+   <h1>Navigation</h1>
+   <p>Each InfoHQ come with an installed navigation for InfoHQ founders and users. All InfoHQ users and admin could changed the navigation anytime when needed. </p>
+   <p>In order to change site navigation, please check all pages in your InfoHQ. Most InfoHQ pages will have a prebuilt UI made by Software and Website Developer Team. In 'body', you will see a id named 'overlay-content', you could then changed everything inside 'overlay-content'. Once you done, make a pull request and once it approved, you will be able to check out your new site navigation. </p>
+   <p>Remember to changed it on all pages in your InfoHQ except redirects pages.</p>
+   <br>
+   <br>
+   <hr>
+   <h4 style="text-align:center;color:blue;">Hosted by One Future Unified Team powered by Info HQ.</h4>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+     
+</body>
+</html>
