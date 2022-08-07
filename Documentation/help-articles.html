@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM4LK5K0LJ');
+</script>
+    <title>Help Articles</title>
+    <style>
+body {
+  color:red;
+}
+.dictionary {
+  color: blue;
+  max-width: 400px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+.txtBox {
+  appearance: none;
+  -webkit-appearance:none;
+  font-size:16px;
+  padding: 15px;
+  width:100%;
+}
+.submit-btn {
+  appearance: none;
+  -webkit-appearance:none;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: grey;
+  color: #fff;
+  font-size: 15px;
+  height: 100%;
+}
+form {
+  position: relative;
+}
+.search-result{
+  padding:20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+    </style>
+    </head>
+<body>
+  <div class="sidebar">
+    <h2 style="text-align:center;">One Future Unified Team Documentation</h2>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html">Donate</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contributing.html">Contributing</a>
+      <a href="help-articles.html">Help Articles</a>
+    </div>
+    
+    <div class="content">
+  <h1>One Future Unified Team Help Articles</h1>
+  <p style="text-align:center;"><strong>A place to get help articles and error codes answered. There are many help articles codes provided and used by One Future Unified Team. Please search for your error codes in the search bar to looks for the information about it. </strong></p>
+  <br><br>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Codes</th>
+    </tr>
+    <tr>
+      <td>Account Banned</td>
+      <td>13841</td>
+    </tr>
+    <tr>
+      <td>Account Deleted</td>
+      <td>67381</td>
+    </tr>
+    <tr>
+      <td>Account Disabled</td>
+      <td>89651</td>
+    </tr>
+    <tr>
+      <td>Account Not To Be Found</td>
+      <td>10915</td>
+    </tr>
+    <tr>
+      <td>Adjusting Donation</td>
+      <td>52107</td>
+    </tr>
+    <tr>
+      <td>Didn't COPPA required each software to be 13?</td>
+      <td>98106</td>
+    </tr>
+    <tr>
+      <td>What Does Donation Do?</td>
+      <td>61029</td>
+    </tr>
+    <tr>
+      <td>Embed</td>
+      <td>92657</td>
+    </tr>
+    <tr>
+      <td>How Could I Donate?</td>
+      <td>78526</td>
+    </tr>
+      <tr>
+      <td>How Old Is It Required To Use One Future Web Projects?</td>
+      <td>23195</td>
+    </tr>
+    <tr>
+      <td>Payment Processor</td>
+      <td>89103</td>
+    </tr>
+  </table>
+  <br><br>
+<form class="searchForm">
+<input type="search" class="txtBox">
+<input type="submit" class="submit-btn" value="submit">
+</form>
+ <div class="search-result">
+<h2 class="search-word"></h2>
+<p class="description" style="text-align:center"></p>
+  </div>
+ <script>
+const txtBox = document.querySelector(".txtBox");
+const form = document.querySelector(".searchForm");
+const searchWord = document.querySelector(".search-word");
+const description = document.querySelector(".description");
+const dictionaryJson =
+  "articles.json";
+function searchDict(e) {
+  e.preventDefault();
+  fetch(dictionaryJson)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      e.preventDefault;
+      let word = txtBox.value;
+      console.log(txtBox.value);
+      let searchKeyword = word.toUpperCase();
+      Object.keys(data).forEach(function(key) {
+        if (key === searchKeyword) {
+          searchWord.innerHTML = searchKeyword;
+          if(searchKeyword === data[key]){
+            description.innerHTML = "Not found";
+          }
+          else{
+             description.innerHTML = data[key];
+          }
+          
+          console.log(data[key]);
+        }
+      });
+    });
+}
+
+form.addEventListener("submit", searchDict);
+
+_.find(allmCar, (mCar) => /XYZ/.test(mCar.value));
+</script>
+
+</body>
+</html>

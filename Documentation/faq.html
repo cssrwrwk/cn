@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM4LK5K0LJ');
+</script>
+<title>FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color:red;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content1 {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.collapsible {
+  background-color: yellow;
+  color: green;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+  color: yellow;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+  color: green;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2 style="text-align:center;">One Future Unified Team Documentation</h2>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html">Donate</a>
+  <a class="active" href="faq.html">FAQ</a>
+  <a href="contributing.html">Contributing</a>
+  <a href="help-articles.html">Help Articles</a>
+</div>
+
+<div class="content1">
+<h1>Frequently Asked Question</h1>
+<p>There are many frequently asked question by the One Future Unified Team community. We would explain each and all of the question here. There might be a chances that your question that you been looking be answered directly here too. All answers had been written by the team too. </p>
+<hr>
+<button type="button" class="collapsible">Why One Future Unified Team exist?</button>
+<div class="content">
+  <p>One Future Unified Team was founded and created by a group of tech-savvy teens in their school. One Future Unified Team was meant to sell websites for a margin of the price offered by competitor. </p>
+</div>
+<button type="button" class="collapsible">How does One Future Unified Team monetised and funded?</button>
+<div class="content">
+  <p>One Future Unified Team is monetised with a tons of privacy-friendly ways like donation, sponsorship, static ads and etc. We are largely funded by donation made by the community and selling websites we built to our clients and customers. We do not and have no intention to lock any of our features provided by us behind paywall nor selling any user data. </p>
+</div>
+<button type="button" class="collapsible">How To Pronounce One Future Unified Team?</button>
+<div class="content">
+  <p>Please listen to the audio files provided by the team with the audio player below to heard how to pronounce One Future Unified Team. The audio was generated via a text to speech (TTS) software and not voiced by any of the team.</p>
+  <audio controls>
+  <source src="pronounce.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
