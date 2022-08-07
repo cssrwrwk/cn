@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: yellow;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align:center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: green;
+}
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1 style="color:cyan;text-align:center;">Teenager Heroes</h1>
+  <a href="index.html"><i class='bx bx-home'></i> Home</a>
+  <a href="about.html"><i class='bx bxs-info-circle' ></i> About</a>
+  <a href="news.html"><i class='bx bx-news' ></i> News</a>
+  <a href="character.html"><i class='bx bx-male-female'></i> Character</a>
+  <a href="locations.html"><i class='bx bx-location-plus'></i> Locations</a>
+  <a href="story.html"><i class='bx bx-book' ></i> Story</a>
+  <a href="vehicles.html"><i class='bx bxs-plane-alt'></i> Vehicles</a>
+</div>
+
+<div id="main">
+<div style="border: 5px outset red;background-color:lightblue;color:blue;font-size:30px;text-align:left;width:100%;">
+<span style="cursor:pointer;;font-size:30px;" onclick="openNav()">&#9776;</span><span style="cursor:pointer;text-align:left;font-size:30px;" onclick="openNav()"></span>
+  <a href="https://www.facebook.com/TeenagerHeroes2022"><i class='bx bxl-facebook-square' style="font-size:30px;"></i></a>
+  <a href="https://twitter.com/teenagerheroes"><i class='bx bxl-twitter' style="font-size:30px;"></i></a>
+</div>
+<div style="text-align:center;color:green;">
+<div>
+<div style="background-color:yellow;width:100%;padding:16px;margin:10px;">
+  <img src="https://github.com/One-Future-Unified-Team/Teenager-Heroes/blob/main/images/logo.png?raw=true" alt="Logo" style="width:400px;height:400px;">
+  <div style="float:center;"><h1 style="color:green;">Home</h1><h3 style="color:green;"><strong>Welcome</strong> to <strong>Teenager Heroes</strong> official website!</h3></div>
+  </div>
+<div style="background-color:purple;width:100%;color:cyan;padding:16px;margin:10px;">
+<h2>About Us</h2>
+<p>In 2100, there are two teenage Chinese twins heroes, named Li Hui and Hu Jie with their parents in Perle out for an adventure to protect their mighty city! Teenager Heroes is written and created by Jst Tan with co-writer Wakjawa, distributed by One Future Unified Team into many various platforms.</p>
+</div>
+
+<div style="background-color:green;width:100%;color:cyan;float:center;padding:16px;margin:10px;">
+<h2>Characters</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="#" href="character.html">
+      <img src="https://github.com/One-Future-Unified-Team/Teenager-Heroes/blob/main/images/Li%20Hui.png?raw=true" alt="Li Hui" width="600" height="400">
+    </a>
+    <div class="desc"><h2>Li Hui</h2></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="#" href="character.html">
+      <img src="https://github.com/One-Future-Unified-Team/Teenager-Heroes/blob/main/images/Hu%20Jie.png?raw=true" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h2>Hu Jie</h2></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+
+<div style="background-color:blue;width:100%;color:cyan;float:left;margin-top:10px;padding:16px;">
+<h2>Reading Platforms</h2>
+  <img src="https://github.com/One-Future-Unified-Team/Teenager-Heroes/blob/main/images/wattpad.png?raw=true" alt="Snow" style="width:200px;height:200px;">
+  <img src="https://github.com/One-Future-Unified-Team/Teenager-Heroes/blob/main/images/OFUT.png?raw=true" alt="Snow" style="width:200px;height:200px;">
+</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  documen
