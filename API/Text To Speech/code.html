@@ -1,0 +1,27 @@
+        <p style="color:green;">Select Voice</p>
+        <select id="voices" class="form-select bg-secondary text-light" style="width:100%;background-color:silver;"></select>
+        <div class="d-flex mt-4 text-light">
+            <div>
+              <p class="lead" style="color:red;">Volume</p>
+              <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
+              <span id="volume-label" class="ms-2" style="color:red;width:100%;">1</span>
+            </div>
+            <div class="mx-5">
+              <p class="lead" style="color:blue;">Rate</p>
+              <input type="range" min="0.1" max="10" value="1" id="rate" step="0.1" />
+              <span id="rate-label" class="ms-2" style="color:blue;width:100%;">1</span>
+            </div>
+            <div>
+              <p class="lead" style="color:orange;">Pitch</p>
+              <input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+              <span id="pitch-label" class="ms-2" style="color:orange;width:100%">1</span>
+            </div>
+          </div>
+          <h2 style="color:green;">Text</h2>
+          <textarea class="form-control bg-dark text-light mt-5" cols="30" rows="10" placeholder="Type here..." style="text-align:center;width:100%;"></textarea>
+          <div class="mb-5">
+            <button id="start" class="btn btn-success mt-5 me-3" style="background-color:greenyellow;color:blue;padding:30px;font-size:20px;">Start</button>
+            <button id="pause" class="btn btn-warning mt-5 me-3" style="background-color:red;color:yellow;padding:30px;font-size:20px;">Pause</button>
+            <button id="resume" class="btn btn-info mt-5 me-3" style="background-color:orange;color:blue;padding:30px;font-size:20px;">Resume</button>
+            <button id="cancel" class="btn btn-danger mt-5 me-3" style="background-color:black;color:red;padding:30px;font-size:20px;">Cancel</button>
+          </div>
