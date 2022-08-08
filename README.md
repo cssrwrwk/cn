@@ -3,12 +3,12 @@ Welcome to One Future Unified Team official repository for One Future Unified Te
 
 - [x] Main Sites (Jst Tan) 
 - [ ] Documentation (Jst Tan)
-- [ ] InfoHQ
+- [ ] InfoHQ 
 - [ ] API
-- [ ] PJ Masks Save The Day
+- [ ] PJ Masks Save The Day (Jst Tan)
 - [ ] Partner (Jst Tan)
 - [ ] Store
 - [ ] Staff
-- [ ] Teenager Heroes 
+- [ ] Teenager Heroes (Jst Tan)
 - [ ] Web App
 - [x] Workplace (Jst Tan)
