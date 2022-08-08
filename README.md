@@ -11,4 +11,4 @@ Welcome to One Future Unified Team official repository for One Future Unified Te
 - [ ] Staff
 - [ ] Teenager Heroes 
 - [ ] Web App
-- [ x ] Workplace (Jst Tan)
+- [x] Workplace (Jst Tan)
