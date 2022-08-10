@@ -6,8 +6,8 @@ Welcome to One Future Unified Team official repository for One Future Unified Te
 - [ ] InfoHQ 
 - [ ] API
 - [ ] PJ Masks Save The Day (Jst Tan)
-- [ ] Partner (Jst Tan)
-- [ ] Store
+- [x] Partner (Jst Tan)
+- [ ] Store (Jst Tan)
 - [ ] Staff
 - [ ] Teenager Heroes (Jst Tan)
 - [ ] Web App
